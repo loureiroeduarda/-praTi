@@ -1,0 +1,29 @@
+<script>
+
+let numero = 0
+let operacao = ""
+let resultado = 0
+
+while(operacao != "S") {
+	numero = parseFloat(prompt("Insira um n."));
+	operacao = prompt("Insira a operacao: (+ - * / **). Para sair insira S"); 
+	if(operacao == "+") {
+		resultado = resultado + numero
+		alert("Valor acumulado: " + resultado)
+	} else if(operacao == "-") {
+		resultado = resultado - numero
+		alert("Valor acumulado: " + resultado)
+	} else if(operacao == "*") {
+		resultado = resultado * numero
+		alert("Valor acumulado: " + resultado)
+	} else if(operacao == "/") {
+		resultado = resultado / numero
+		alert("Valor acumulado: " + resultado)
+	} else if(operacao == "**") {
+		resultado = resultado ** numero
+		alert("Valor acumulado: " + resultado)
+	}
+}
+alert("The End");
+
+</script>
