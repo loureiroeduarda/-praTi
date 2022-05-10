@@ -1,0 +1,43 @@
+<script>
+
+let peso = 100; // peso em kg. Observe o uso de "." para fração.
+let altura = 1.77; // altura em metros, também como fração.
+
+let imc = peso / (altura**2);
+alert(imc)
+imc = 24.95
+
+if (imc < 18.5) {
+	alert("Classificação: Magreza e Grau O de obesidade");
+} else if (imc >= 18.5 && imc <= 24.999) {
+	alert("Classificação: Normal e Grau O de obesidade");
+} else if (imc >= 25 && imc <= 29.999) {
+	alert("Classificação: Sobrepeso e Grau I de obesidade");
+} else if (imc >= 30 && imc <= 39.999) {
+	alert("Classificação: Obesidade e Grau II de obesidade");
+} else {
+	alert("Classificação: Obesidade Grave e Grau III de obesidade");
+}
+
+
+if (imc < 18.5) {
+	alert("Classificação: Magreza e Grau O de obesidade");
+} else if (imc < 25) {
+	alert("Classificação: Normal e Grau O de obesidade");
+} else if (imc < 30) {
+	alert("Classificação: Sobrepeso e Grau I de obesidade");
+} else if (imc < 40) {
+	alert("Classificação: Obesidade e Grau II de obesidade");
+} else {
+	alert("Classificação: Obesidade Grave e Grau III de obesidade");
+}
+
+
+
+//let imc =
+//cálculo IMC => peso dividido pela altura ao quadrado.
+
+//tarefa: exibir uma mensagem da classificação correspondente.
+//ao imc
+
+</script>
