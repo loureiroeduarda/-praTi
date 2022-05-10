@@ -1,0 +1,24 @@
+<script>
+
+let x = prompt("Insira nº. 01");
+x = parseFloat(x);
+
+let y = prompt("Insira nº. 02");
+y = parseFloat(y);
+
+let operacao = prompt("Insira a operação: + - * / **");
+if(operacao == "+") {
+	alert(x+y);
+} else if(operacao == "-") {
+	alert(x-y);
+} else if(operacao == "*") {
+	alert(x*y);
+} else if(operacao == "/") {
+	alert(x/y);
+} else if(operacao == "**") {
+	alert(x**y);
+} else {
+	alert("Operação não mapeada")
+}
+
+</script>
