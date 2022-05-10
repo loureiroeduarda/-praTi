@@ -1,2 +1,2 @@
-# -praTi
+# +praTi
 Introdução à programação
