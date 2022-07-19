@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>
+			Formulário HTML
+		</title>
+
+			<script>
+
+				function ler() {
+					let digitar = prompt("Entre com um texto:");
+					document.getElementById("digitar").value = digitar;
+				}
+
+				function escrever() {
+					let digitar = document.getElementById("digitar").value;
+					alert("O texto que você digitou foi: " + digitar);
+				}
+
+			</script>
+
+	</head>
+	<body>
+		<input id="digitar">
+		<br><br><button onclick="ler()">Ler</button>
+		<br><button onclick="escrever()">Escrever</button>
+	</body>
+
+</html>

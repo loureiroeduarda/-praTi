@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+	
+		function funcao(valor) {
+			return ((valor % 2) == 0);
+		}
+
+		function testa(valor) {
+			return valor > 0;
+		}
+
+		let array1 = [1,2,3,4,5];
+		let array2 = array1.filter(funcao);
+		console.log(array1);
+		console.log(array2);
+
+		let resultado = array1.every(testa);
+		let resultado2 = array1.some(testa);
+		console.log(resultado);
+		console.log(resultado2);
+
+		</script>
+	</head>
+</html>

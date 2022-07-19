@@ -1,0 +1,24 @@
+<script>
+
+var mensagem = [];
+
+function escrever (msg,tipo) {
+	if (tipo == 1){
+		mensagem.push(msg);
+		console.log(msg);
+	}
+	else if (tipo == 2) {
+		mensagem.push(msg);
+		alert(msg);
+	}
+	else if (tipo == 3) {
+		mensagem.push(msg);
+		document.write(msg);
+	}
+}
+
+escrever("Está mensagem é para a console.log ",1);
+escrever("Está mensagem é para a alert ",2);
+escrever("Está mensagem é para a document.write ",3);
+
+</script>

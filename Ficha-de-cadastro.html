@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>
+			Ficha de Cadastro
+		</title>
+
+			<script>
+				
+				let totalCadastros = 0;
+				let nomes = [];
+				let emails = [];
+				let endereco = [];
+				let whatsApp = [];
+
+				function criarCadastro() {
+					let nome = document.getElementById("nome").value;
+					let email = document.getElementById("email").value;
+					let endereco1 = document.getElementById("endereco").value;
+					let whatsApp1 = document.getElementById("whatsapp").value;
+					nomes [totalCadastros] = nome;
+					emails [totalCadastros] = email;
+					endereco [totalCadastros] = endereco1;
+					whatsApp [totalCadastros] = whatsApp1;
+					document.getElementById("usuarios").innerHTML += "<p onclick='exibir(" + totalCadastros + ")'>" + nome;
+
+					totalCadastros++;
+				}
+
+				function exibir(indice) {
+					document.getElementById("cadastro").innerHTML = "Nome: " + nomes[indice] + "<br>E-mail: " + emails[indice] + "<br>Endereço: " + endereco[indice] + "<br>WhatsApp: " + whatsApp[indice];
+				}
+
+			</script>
+
+	</head>
+	<body>
+		<h1>Ficha de cadastro:</h1>
+
+		Nome: <input id="nome" type="text" name="nome" value="">
+		<br><br> E-mail: <input id="email" type="text" name="nome" value="">
+		<br><br> Endereço: <input id="endereco" type="text" name="nome" value="">
+		<br><br> WhatsApp: <input id="whatsapp" type="text" name="nome" value="">
+		<br><br><button onclick="criarCadastro()">Criar Cadastro</button>
+
+		<br><br>Usuários:
+		<p id="usuarios"></p>
+
+		<br><br>Cadastro
+		<p id="cadastro"></p>
+	</body>
+
+</html>
