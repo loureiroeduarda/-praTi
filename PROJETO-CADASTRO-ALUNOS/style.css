@@ -1,0 +1,44 @@
+body {
+	background-color: #F5FFFA;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+h2 {
+	text-align: center;
+	font-family: Helvetica;
+	font-weight: bold;
+	color: #363636;
+	background-color: #3CB371;
+	padding: 20px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.afasta-topo {
+	margin-top: 40px;
+}
+
+.form-label {
+	color: #363636;
+	font-weight: bold;
+}
+
+.btn-primary {
+	border-color: #008000;
+	background-color: #3CB371;
+	color: #F5F5DC;
+}
+
+.table {
+	color: #363636;
+}
+
+.thead-light {
+	background-color: #3CB371;
+}
+
+#tbody {
+	background-color: #FFFAFA;
+	color: #363636;
+}
